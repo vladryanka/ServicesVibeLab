@@ -14,7 +14,7 @@ import java.net.URL
 
 class CatWorker(context: Context, parameter: WorkerParameters) : Worker(context, parameter) {
 
-    private val link = "https://catfact.ninja/facts?limit=15"
+    private val link = "https://catfact.ninja/facts?limit=6"
     private val catFactsLiveData = MutableLiveData<Result>()
 
     val catFacts: LiveData<Result>
